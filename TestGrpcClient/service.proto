@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package RandomNumber;
+
+service RandomNumberGenerator {
+  rpc GetRandomNumber (RandomNumberRequest) returns (RandomNumberResponse);
+}
+
+message RandomNumberRequest {
+}
+
+message RandomNumberResponse {
+  uint64 number = 1;
+}
